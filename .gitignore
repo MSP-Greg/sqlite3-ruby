@@ -13,3 +13,7 @@ ports
 InstalledFiles
 Makefile
 Gemfile.lock
+
+win_gem_test/shared
+win_gem_test/test_logs
+*.gem
