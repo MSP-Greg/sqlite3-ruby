@@ -4,7 +4,7 @@ image: Visual Studio 2017
 clone_depth: 15
 
 install:
-  - ps: >-
+  - ps: |
       if ( !(Test-Path -Path ./shared -PathType Container) ) {
         $uri = 'https://ci.appveyor.com/api/projects/MSP-Greg/av-gem-build-test/artifacts/shared.7z'
         $7z  = 'C:\Program Files\7-Zip\7z.exe'
