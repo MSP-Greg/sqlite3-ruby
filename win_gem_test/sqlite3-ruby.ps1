@@ -14,6 +14,10 @@ Make-Const url_repo  'https://github.com/sparklemotion/sqlite3-ruby.git'
 
 #———————————————————————————————————————————————————————————————— lowest ruby version
 Make-Const ruby_vers_low 22
+# null = don't compile; false = compile, ignore test (allow failure);
+# true = compile & test
+Make-Const trunk     $false ; Make-Const trunk_x64     $false
+Make-Const trunk_JIT $null  ; Make-Const trunk_x64_JIT $null
 
 #———————————————————————————————————————————————————————————————— make info
 Make-Const dest_so  'lib\sqlite3'
