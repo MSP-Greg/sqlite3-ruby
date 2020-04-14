@@ -16,3 +16,7 @@ module SQLite3
     end
   end
 end
+
+Minitest.after_run do
+  puts "", RUBY_DESCRIPTION, "SQLite version: #{SQLite3::SQLITE_VERSION}", ""
+end
