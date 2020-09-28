@@ -10,7 +10,7 @@ jobs:
     runs-on: ${{ matrix.os }}-latest
     env:
       CONFIGURE_ARGS: --disable-rpath
-      MACOSX_RPATH: TRUE
+      MACOSX_RPATH: 1
     strategy:
       fail-fast: false
       matrix:
