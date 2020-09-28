@@ -10,6 +10,7 @@ jobs:
     runs-on: ${{ matrix.os }}-latest
     env:
       CONFIGURE_ARGS: --disable-rpath
+      MACOSX_RPATH: TRUE
     strategy:
       fail-fast: false
       matrix:
@@ -33,5 +34,6 @@ jobs:
       - name: save lib
         uses: actions/upload-artifact@v1
         with:
-          name: lib
+          name: >-
+            lib-${{ matrix.ruby }}
           path: ./lib
