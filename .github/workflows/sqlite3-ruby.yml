@@ -37,7 +37,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows ]
-        ruby: [ mingw, 2.7, 2.6, 2.5, 2.4 ]
+        ruby: [ mswin, mingw, 2.7, 2.6, 2.5, 2.4 ]
     steps:
       - uses: actions/checkout@v2
       - name: load Ruby and sqlite3
